@@ -4,7 +4,7 @@ Welcome to my Rust learning journey! This repository contains various subfolders
 
 ## Table of Contents
 
-- [Hello World](hello_world/)
+- [Hello World](hello-world/)
 - [Variables](variables)
 - [Functions](functions)
 - [Loops](loops)
@@ -12,7 +12,7 @@ Welcome to my Rust learning journey! This repository contains various subfolders
 
 ## Project Structure
 
-- **[hello-world](hello_world):** Basic "Hello, World!" program in Rust.
+- **[hello-world](hello-world):** Basic "Hello, World!" program in Rust.
 - **[variables](variables):** Examples of variable declarations and usage in Rust.
 - **[functions](functions):** Examples of function declarations and usage in Rust.
 - **[loops](loops):** Demonstrations of loops in Rust, including `for`, `while`, and `loop`.
