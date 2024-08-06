@@ -7,7 +7,7 @@ Welcome to my Rust learning journey! This repository contains various subfolders
 - [Hello World](hello-world/)
 - [Variables](variables)
 - [Functions](functions)
-- [Loops](loops)
+- [Control Flow](control-flow)
 - [More Topics...]
 
 ## Project Structure
@@ -15,7 +15,7 @@ Welcome to my Rust learning journey! This repository contains various subfolders
 - **[hello-world](hello-world):** Basic "Hello, World!" program in Rust.
 - **[variables](variables):** Examples of variable declarations and usage in Rust.
 - **[functions](functions):** Examples of function declarations and usage in Rust.
-- **[loops](loops):** Demonstrations of loops in Rust, including `for`, `while`, and `loop`.
+- **[control-flow](control-flow):** Examples of control flow constructs in Rust, including `if` expressions and loops (`for`, `while`, & `loop`).
 
 ## Learning Resources
 
