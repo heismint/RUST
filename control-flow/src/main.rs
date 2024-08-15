@@ -1,5 +1,4 @@
 fn main() {
-
     // if statment
     let number = 7;
 
@@ -22,21 +21,17 @@ fn main() {
         println!("number is not divisible by 4, 3 or 2");
     }
 
-    // Using if in a let statement 
+    // Using if in a let statement
     let condition = false;
-    let number3 = if condition {
-        5
-    } else {
-        6
-    };
+    let number3 = if condition { 5 } else { 6 };
     println!("The value of number is: {}", number3);
 
     // Repetition with loops
     loop {
         println!("Chale print am again!!");
         break;
-    } 
-    
+    }
+
     // Returning values from loops
     let mut counter = 0;
 
