@@ -51,7 +51,25 @@ fn main() {
     let a1 = String::from("Morning!!"); // Create new variable a1
 
     let (a2, len) = calculate_length(a1.clone()); // Clone a1 to calculate_length
-    println!("Length of a2 is: '{}', {}.", a2, len);
+    println!("Length of '{}' is, {}.", a2, len);
+
+    // Using references and borrowing to create the ai.clone exaple above
+    let d = String::from("Yo Neovim!!");
+
+    let len = calculate_len2(&d);
+    println!("The length of '{}' is {}.", d, len);
+
+    
+// Mutable references Note: you can only have one mutable reference to a particular piece of data
+// in a particular scope
+let mut s = String::from("Buenos dias");
+
+let r1 = &mut s;
+println!("{}", r1);
+
+let r2 = &mut s;
+println!("{}",r2);
+
 }
 
 // Ownership and functions
@@ -78,3 +96,9 @@ fn calculate_length(s: String) -> (String, usize) { // Returning multiple values
     (s, length)
 }
 
+// References and Borrowing
+fn calculate_len2(s: &String) -> usize { // & symbol is used to refernce(borrow a value) and it's
+                                         // also used to accept a refeerence in a function 
+    s.len()
+}
+                                                          
