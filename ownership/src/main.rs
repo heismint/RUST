@@ -70,6 +70,10 @@ println!("{}", r1);
 let r2 = &mut s;
 println!("{}",r2);
 
+let mut _v = String::from("Night life!");
+let _word = first_word(&s); // word will get value 5
+s.clear(); // this empties the string making it equal to ""
+
 }
 
 // Ownership and functions
@@ -101,4 +105,16 @@ fn calculate_len2(s: &String) -> usize { // & symbol is used to refernce(borrow 
                                          // also used to accept a refeerence in a function 
     s.len()
 }
-                                                          
+
+// The slice type 
+fn first_word(s: &String) -> usize {
+    let bytes = s.as_bytes();
+
+    for(i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return i;
+        }
+    } 
+    s.len()
+}
+
